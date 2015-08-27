@@ -48,6 +48,13 @@ namespace Maze
         {
             // When the mouse pointer hits a wall or enters the panel,
             // call the MoveToStart() method.
+
+            Label label = sender as Label;
+            if (label != null)
+            {
+                label.BackColor = Color.Salmon;
+            }
+
             MoveToStart();
         }
 
